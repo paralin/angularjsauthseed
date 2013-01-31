@@ -9,6 +9,9 @@ It works by intercepting 401 Not Authorized responses from the server (in for ex
 
 On default, when a page loads, the app asks the server if the user is logged in, so that any non-login or create page will be protected. You can modify this behavior by commenting "ping()" in two places noted by comments in app.js. If this is disabled, the app will only give a login screen when login is required.
 
+Getting Started
+==============
+This can be used like the normal AngularJS seed. To test it out, clone it into a folder. Launch your server (I recommend WAMP for local testing on windows) and use the .sql file on your mysql database to create the users structure. Update the connection info in conn_mysql.php. You should be good to go.
 
 Requirements
 ===========
