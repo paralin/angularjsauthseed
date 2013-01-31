@@ -1,0 +1,11 @@
+<h3>Create an Account</h3>
+<form ng-submit="doSubmit()" ng-show="showCreateForm">
+    <input id="username" name="username" type="text" required ng-model="accountData.username" placeholder="Username"><br>
+    <input id="password" name="password" type="password" required ng-model="accountData.password" placeholder="Password">  <br>
+    <input id="email" name="email" type="email" required ng-model="accountData.email" placeholder="Email">  <br>
+    <input id="submit" name="submit" type="submit" value="Submit"> <br>
+    {{createErrorMessage}}
+</form>
+<div ng-show="!showCreateForm">
+    {{createMessage}}
+</div>

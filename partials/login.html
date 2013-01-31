@@ -1,0 +1,10 @@
+<h3>Login to the Site</h3>
+<form ng-submit="doSubmit()" ng-show="showLoginForm">
+    <input id="username" name="username" type="text" required ng-model="accountData.username" placeholder="Username"><br>
+    <input id="password" name="password" type="password" required ng-model="accountData.password" placeholder="Password">  <br>
+    <input id="submit" name="submit" type="submit" value="Submit"> <br>
+    {{loginErrorMessage}}
+</form>
+<div ng-show="!showLoginForm">
+    {{loginMessage}}
+</div>
