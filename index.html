@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>AngularJS Auth Seed by kidovate</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>AngularJS Auth Seed</h1>
+        <p>AngularJS template with a basic authentication/login system.</p>
+
+        <p class="view"><a href="https://github.com/kidovate/angularjsauthseed">View the Project on GitHub <small>kidovate/angularjsauthseed</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/kidovate/angularjsauthseed/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/kidovate/angularjsauthseed/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/kidovate/angularjsauthseed">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Angular JS Auth Seed</h1>
+
+<p>This is a modified version of the AngularJS seed project that includes a login / authentication system. It includes 3 basic demo pages (create account, login, protected content), as well as basic PHP server-side code for the app.</p>
+
+<p>On default, when a page loads, the app asks the server if the user is logged in, so that any non-login or create page will be protected. You can also configure the system to only require a login when the app is rejected sensitive content due the the user not being logged in.</p>
+
+<h1>How It Works</h1>
+
+<p>The system works by intercepting 401 Not Authorized responses from the server (in for example a $http query). Any 401 Not Authorized response will trigger a rerender of the login screen. The page the user attempted to access when given the 401 response is saved, and returned to once authentication is attained again.  </p>
+
+<h1>Getting Started</h1>
+
+<p>This is used like the normal <a href="https://github.com/angular/angular-seed">AngularJS Seed</a>. Clone it into a directory and host it with a PHP/Mysql server. Use the .sql file to create the basic database structure. Configure the system for your database in conn_mysql.php</p>
+
+<h1>Requirements</h1>
+
+<p>PHP for default server-side</p>
+
+<p>MySql for default database</p>
+
+<h1>Author</h1>
+
+<p>kidovate or Christian Stewart, 2013</p>
+
+<h1>Unlicense</h1>
+
+<p>This is free and unencumbered software released into the public domain.</p>
+
+<p>Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.</p>
+
+<p>In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</p>
+
+<p>For more information, please refer to <a href="http://unlicense.org/">http://unlicense.org/</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/kidovate">kidovate</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
